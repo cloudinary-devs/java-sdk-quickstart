@@ -8,7 +8,8 @@ import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-        Cloudinary cloudinary = new Cloudinary("cloudinary://373364719177799:aa9f1c5a3d4c6ddd85d7c5f7673c4500@demo");
+        // replace `cloudinary://my_key:my_secret@my_cloud_name` with your environment variable
+        Cloudinary cloudinary = new Cloudinary("cloudinary://my_key:my_secret@my_cloud_name");
         cloudinary.config.secure = true;
         System.out.println(cloudinary.config.cloudName);
 

@@ -11,8 +11,8 @@ import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
+        
         // Set your Cloudinary credentials
-
         Dotenv dotenv = Dotenv.load();
         Cloudinary cloudinary = new Cloudinary(dotenv.get("CLOUDINARY_URL"));
         cloudinary.config.secure = true;

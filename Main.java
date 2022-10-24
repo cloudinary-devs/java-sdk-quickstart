@@ -43,13 +43,13 @@ public class Main {
             System.out.println(
                     cloudinary.url().transformation(new Transformation()
                     .crop("pad")
-                    .width(150)
-                    .height(150)
+                    .width(300)
+                    .height(400)
                     .background("auto:predominant"))
                     .imageTag("coffee_cup"));
 
             // The code above generates an HTML image tag similar to the following:
-            //  <img src='https://res.cloudinary.com/demo/image/upload/b_auto:predominant,c_pad,h_150,w_150/coffee_cup' height='150' width='150'/>
+            //  <img src='https://res.cloudinary.com/demo/image/upload/b_auto:predominant,c_pad,h_400,w_300/coffee_cup' height='400' width='300'/>
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
